@@ -24,7 +24,7 @@ router.post('/register', async (req, res) => {
 
     jwt.sign(
       payload,
-      '3fb624a737918d359a45ae43089e20f3f272621a89f304d7514a4eda35dc70071e53b632b89525f15e5ec8cd864217641240e7456a064625fed15ba550731a', 
+      'key should add here', 
       { expiresIn: 3600 },
       (err, token) => {
         if (err) throw err;
